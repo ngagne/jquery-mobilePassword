@@ -9,8 +9,15 @@
  * @version         1.0
  *
  */
-;
-(function ($) {
+(function( factory ) {
+    if ( typeof define === "function" && define.amd ) {
+        define( ["jquery"], factory );
+    } else if (typeof module === "object" && module.exports) {
+        module.exports = factory( require( "jquery" ) );
+    } else {
+        factory( jQuery );
+    }
+}(function( $ ) {
     var defaults = {
         checkInterval: 200, //set timeout to check whether all the characters are the same
         transDelay   : 200, //delay to transform last letter
@@ -228,4 +235,4 @@
     };
 
 
-})(jQuery);
+}));
