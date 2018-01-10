@@ -1,6 +1,6 @@
 {
   "name": "jquery-mobilepassword",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a jQuery plugin that make your password input field like mobile client interaction. We can see the last letter.",
   "main": "js/jquery.mobilePassword.js",
   "scripts": {
